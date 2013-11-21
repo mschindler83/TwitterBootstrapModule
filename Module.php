@@ -28,28 +28,28 @@ class Module
 
     public function getAutoloaderConfig()
     {
-        return array(
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
+        return [
+            'Zend\Loader\StandardAutoloader' => [
+                'namespaces' => [
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 
     public function getViewHelperConfig()
     {
         return [
             'invokables' => [
-                'bootstrapLabel'          => 'TwitterBootstrap\View\Helper\Label',
-                'bootstrapAlert'          => 'TwitterBootstrap\View\Helper\Alert',
-                'bootstrapBadge'          => 'TwitterBootstrap\View\Helper\Badge',
-                'bootstrapProgressBar'    => 'TwitterBootstrap\View\Helper\ProgressBar',
-                'bootstrapButtonDropdown' => 'TwitterBootstrap\View\Helper\ButtonDropdown',
-                'bootstrapPanel'          => 'TwitterBootstrap\View\Helper\Panel',
-                'bootstrapPageHeader'     => 'TwitterBootstrap\View\Helper\PageHeader',
-                'bootstrapIcon'           => 'TwitterBootstrap\View\Helper\Icon',
-                'bootstrapButtonGroup'    => 'TwitterBootstrap\View\Helper\ButtonGroup',
+                'bootstrapLabel'          => 'TwitterBootstrapModule\View\Helper\Label',
+                'bootstrapAlert'          => 'TwitterBootstrapModule\View\Helper\Alert',
+                'bootstrapBadge'          => 'TwitterBootstrapModule\View\Helper\Badge',
+                'bootstrapProgressBar'    => 'TwitterBootstrapModule\View\Helper\ProgressBar',
+                'bootstrapButtonDropdown' => 'TwitterBootstrapModule\View\Helper\ButtonDropdown',
+                'bootstrapPanel'          => 'TwitterBootstrapModule\View\Helper\Panel',
+                'bootstrapPageHeader'     => 'TwitterBootstrapModule\View\Helper\PageHeader',
+                'bootstrapIcon'           => 'TwitterBootstrapModule\View\Helper\Icon',
+                'bootstrapButtonGroup'    => 'TwitterBootstrapModule\View\Helper\ButtonGroup',
             ],
         ];
     }
