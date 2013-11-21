@@ -9,8 +9,35 @@ into viewhelpers
 
 Installation
 ------------
-Clone the repository into your module directory and enable it by adding "TwitterBootstrapModule"
-into your list of enabled modules.
+
+### With composer
+
+1. Add this project and in your composer.json:
+
+    ```json
+    "require": {
+        "mschindler83/twitter-bootstrap-module": "dev-master"
+    }
+    ```
+
+2. Now tell composer to download TwitterBootstrapModule by running the command:
+
+    ```bash
+    $ php composer.phar update
+    ```
+
+3. Enabling it in your `application.config.php`file.
+
+    ```php
+    <?php
+    return array(
+        'modules' => array(
+            // ...
+            'TwitterBootstrapModule',
+        ),
+        // ...
+    );
+    ```
 
 Usage
 ------------
