@@ -36,21 +36,4 @@ class Module
             ],
         ];
     }
-
-    public function getViewHelperConfig()
-    {
-        return [
-            'invokables' => [
-                'bootstrapLabel'          => 'TwitterBootstrapModule\View\Helper\Label',
-                'bootstrapAlert'          => 'TwitterBootstrapModule\View\Helper\Alert',
-                'bootstrapBadge'          => 'TwitterBootstrapModule\View\Helper\Badge',
-                'bootstrapProgressBar'    => 'TwitterBootstrapModule\View\Helper\ProgressBar',
-                'bootstrapButtonDropdown' => 'TwitterBootstrapModule\View\Helper\ButtonDropdown',
-                'bootstrapPanel'          => 'TwitterBootstrapModule\View\Helper\Panel',
-                'bootstrapPageHeader'     => 'TwitterBootstrapModule\View\Helper\PageHeader',
-                'bootstrapIcon'           => 'TwitterBootstrapModule\View\Helper\Icon',
-                'bootstrapButtonGroup'    => 'TwitterBootstrapModule\View\Helper\ButtonGroup',
-            ],
-        ];
-    }
 }
