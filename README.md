@@ -9,7 +9,7 @@ into viewhelpers
 
 Installation
 ------------
-Clone the repository into your module directory and enable it by adding "TwitterBootstrap"
+Clone the repository into your module directory and enable it by adding "TwitterBootstrapModule"
 into your list of enabled modules.
 
 Usage
