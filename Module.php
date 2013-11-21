@@ -17,7 +17,7 @@
  * <http://www.markus-schindler.de/projects/zf2-twitterbootstrap-module>.
  */
 
-namespace TwitterBootstrap;
+namespace TwitterBootstrapModule;
 
 class Module
 {
