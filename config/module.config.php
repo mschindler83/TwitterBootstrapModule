@@ -18,7 +18,7 @@
  */
 
 return [
-    'service_manager' => [
+    'view_helpers' => [
         'invokables' => [
             'bootstrapLabel'          => 'TwitterBootstrapModule\View\Helper\Label',
             'bootstrapAlert'          => 'TwitterBootstrapModule\View\Helper\Alert',
