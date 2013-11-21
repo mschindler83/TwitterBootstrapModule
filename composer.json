@@ -1,5 +1,5 @@
 {
-    "name": "mschindler83/TwitterBootstrapModule",
+    "name": "mschindler83/twitter-bootstrap-module",
     "description": "Zend Framework 2 Module that provides Twitter Bootstrap viewhelpers",
     "type": "library",
     "license": "MIT",
