@@ -26,7 +26,10 @@
     "autoload": {
         "psr-0": {
             "TwittterBootstrapModule": "src/"
-        }
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     },
     "extra": {
         "branch-alias": {
