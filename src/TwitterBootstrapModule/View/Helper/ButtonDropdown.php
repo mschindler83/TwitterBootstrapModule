@@ -116,5 +116,4 @@ class ButtonDropdown extends AbstractBase
     {
         return $this->label;
     }
-
 }

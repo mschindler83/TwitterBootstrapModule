@@ -43,6 +43,7 @@ class ProgressBar extends AbstractBase
         $this->animated = false;
         $this->striped = false;
         $this->text = '% Completed';
+
         return $this;
     }
 
@@ -153,5 +154,4 @@ class ProgressBar extends AbstractBase
     {
         return $this->striped;
     }
-
 }
