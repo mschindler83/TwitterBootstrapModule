@@ -42,7 +42,7 @@ class ButtonGroup extends AbstractBase
 
     public function setSize($size)
     {
-        if (!array_key_exists($size, $this->sizes)) {
+        if (!in_array($size, $this->sizes)) {
             $size = self::SIZE_DEFAULT;
         }
 
@@ -57,7 +57,7 @@ class ButtonGroup extends AbstractBase
 
     public function addButton($label, $style = self::STYLE_DEFAULT)
     {
-        if (!array_key_exists($style, $this->styles)) {
+        if (!in_array($style, $this->styles)) {
             $style = self::STYLE_DEFAULT;
         }
 
@@ -70,7 +70,7 @@ class ButtonGroup extends AbstractBase
         return sprintf(
             '<div class="btn-group%s %s">%s</div>',
             $this->vertical ? '-vertical' : '',
-            $this->sizes[$this->size] != self::SIZE_DEFAULT ? 'btn-group-' . $this->sizes[$this->size] : '',
+            $this->size != self::SIZE_DEFAULT ? 'btn-group-' . $this->size : '',
             $this->renderButtons()
         );
     }
@@ -83,7 +83,7 @@ class ButtonGroup extends AbstractBase
 
             $btnString .= sprintf(
                 '<button type="button" class="btn btn-%s">%s</button>',
-                $this->styles[$button['style']],
+                $button['style'],
                 $button['label']
             ) . "\n";
 

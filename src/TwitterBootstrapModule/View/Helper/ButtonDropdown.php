@@ -41,7 +41,7 @@ class ButtonDropdown extends AbstractBase
 
     public function setStyle($style)
     {
-        if (!array_key_exists($style, $this->styles)) {
+        if (!in_array($style, $this->styles)) {
             $style = self::STYLE_DEFAULT;
         }
 
@@ -63,7 +63,7 @@ class ButtonDropdown extends AbstractBase
                 </ul>
             </div>',
             $this->dropup ? ' dropup' : '',
-            'btn-' . $this->styles[$this->style],
+            'btn-' . $this->style,
             $this->id != null ? $this->id : self::BASE_ID,
             $this->label != null ? $this->label : 'nolabel',
             $this->id != null ? $this->id : self::BASE_ID,

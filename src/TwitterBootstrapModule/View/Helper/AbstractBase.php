@@ -23,7 +23,7 @@ use Zend\View\Helper\AbstractHelper;
 
 class AbstractBase extends AbstractHelper
 {
-    const SIZE_DEFAULT = 'default';
+    const SIZE_DEFAULT = '';
     const SIZE_LARGE   = 'lg';
     const SIZE_SMALL   = 'sm';
     const SIZE_XSMALL  = 'xs';
@@ -36,21 +36,21 @@ class AbstractBase extends AbstractHelper
     const STYLE_INFO    = 'info';
 
     protected $sizes = [
-        self::SIZE_DEFAULT => '',
-        self::SIZE_LARGE   => 'lg',
-        self::SIZE_SMALL   => 'sm',
-        self::SIZE_XSMALL  => 'xs',
+        self::SIZE_DEFAULT,
+        self::SIZE_LARGE,
+        self::SIZE_SMALL,
+        self::SIZE_XSMALL,
     ];
 
     protected $styles = [
-        self::STYLE_DEFAULT => 'default',
-        self::STYLE_PRIMARY => 'primary',
-        self::STYLE_SUCCESS => 'success',
-        self::STYLE_WARNING => 'warning',
-        self::STYLE_DANGER  => 'danger',
-        self::STYLE_INFO    => 'info',
+        self::STYLE_DEFAULT,
+        self::STYLE_PRIMARY,
+        self::STYLE_SUCCESS,
+        self::STYLE_WARNING,
+        self::STYLE_DANGER,
+        self::STYLE_INFO,
     ];
 
-    protected $size = 'default';
+    protected $size = '';
     protected $style = 'default';
 }
