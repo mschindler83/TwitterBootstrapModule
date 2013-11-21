@@ -1,0 +1,36 @@
+{
+    "name": "mschindler83/twitterbootstrap-module",
+    "description": "Zend Framework 2 Module that provides Twitter Bootstrap viewhelpers",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "twitterbootstrap",
+        "viewhelper",
+        "module",
+        "zf2"
+    ],
+    "homepage": "http://www.markus-schindler.de/projects/zf2-twitterbootstrap-module",
+    "authors": [
+        {
+            "name": "Markus Schindler",
+            "email": "mail@markus-schindler.de",
+            "homepage": "http://www.markus-schindler.de/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.14",
+        "zendframework/zend-view": "2.*",
+        "zendframework/zend-mvc": "2.*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "TwittterBootstrap\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
